@@ -2,7 +2,7 @@
     <form wire:submit="save" class="space-y-6">
         {{ $this->form }}
 
-        <div>
+        <div style="margin-top: 2rem;">
             <x-filament::button type="submit" size="lg">
                 Save Changes
             </x-filament::button>

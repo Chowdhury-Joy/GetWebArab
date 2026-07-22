@@ -26,6 +26,7 @@ class PartnerPanelProvider extends PanelProvider
         return $panel
             ->id('partner')
             ->path('partner')
+            ->brandName('Get Web Arab')
             ->login()
             ->colors([
                 'primary' => Color::Cyan,
@@ -38,7 +39,6 @@ class PartnerPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Partner/Widgets'), for: 'App\Filament\Partner\Widgets')
             ->widgets([
                 AccountWidget::class,
-                FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

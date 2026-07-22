@@ -32,6 +32,7 @@ class PartnersTable
                 //
             ])
             ->recordActions([
+                \Filament\Actions\ViewAction::make(),
                 EditAction::make(),
             ])
             ->toolbarActions([

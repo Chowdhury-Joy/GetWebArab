@@ -14,6 +14,8 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
+use App\Filament\Resources\Partners\Pages\ViewPartner;
+
 class PartnerResource extends Resource
 {
     protected static ?string $model = User::class;
@@ -46,6 +48,7 @@ class PartnerResource extends Resource
         return [
             'index' => ListPartners::route('/'),
             'create' => CreatePartner::route('/create'),
+            'view' => ViewPartner::route('/{record}'),
             'edit' => EditPartner::route('/{record}/edit'),
         ];
     }
