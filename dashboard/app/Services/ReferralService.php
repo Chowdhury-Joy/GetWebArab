@@ -10,7 +10,7 @@ class ReferralService
     public function isFounderForPartner(User $partner): bool
     {
         $cap = Settings::current()->founder_client_cap;
-        $existing = $partner->clients()->withTrashed()->count();
+        $existing = $partner->clients()->withTrashed()->where('is_founder', true)->count();
         return $existing < $cap;
     }
 }

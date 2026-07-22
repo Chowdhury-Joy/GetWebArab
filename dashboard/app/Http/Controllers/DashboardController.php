@@ -39,7 +39,7 @@ class DashboardController extends Controller
         // Partner
         $clients = $user->clients()->with('activeServices')->get();
         $activeClientsCount = $clients->where('status', 'active')->count();
-        $founderSlotsUsed = $user->clients()->withTrashed()->count();
+        $founderSlotsUsed = $user->clients()->withTrashed()->where('is_founder', true)->count();
         $cap = Settings::current()->founder_client_cap;
 
         $currentMonthlyRunRate = 0;
