@@ -7,7 +7,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Payout extends Model
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'partner_id',
+        'period_id',
+        'amount_fils',
+        'paid_at',
+        'method',
+        'reference',
+        'created_by',
+    ];
 
     protected $casts = [
         'paid_at' => 'date',

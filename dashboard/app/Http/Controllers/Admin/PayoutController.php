@@ -42,6 +42,8 @@ class PayoutController extends Controller
 
     public function store(Request $request, Period $period, User $partner)
     {
+        abort_unless($partner->isPartner(), 403, 'User is not a partner.');
+
         if ($period->state !== 'closed') {
             return back()->with('error', 'Cannot record payout for an open period.');
         }
@@ -59,8 +61,7 @@ class PayoutController extends Controller
 
         $earned = $partner->earnedForPeriod($period);
         if ($data['amount_fils'] != $earned) {
-            // Usually this should exactly match, but we'll just allow whatever they submit, maybe they paid less?
-            // Actually the spec says "amount prefilled to exactly their earned amount", so they could theoretically change it, but let's enforce a warning or just let them.
+            return back()->with('error', 'The payout amount must exactly match the earned amount for this period.');
         }
 
         Payout::create([

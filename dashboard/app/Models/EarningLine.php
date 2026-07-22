@@ -7,7 +7,17 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class EarningLine extends Model
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'period_id',
+        'partner_id',
+        'client_id',
+        'kind',
+        'list_fils',
+        'discount_pct',
+        'charged_fils',
+        'partner_fils',
+        'house_fils',
+    ];
 
     public function period(): BelongsTo
     {

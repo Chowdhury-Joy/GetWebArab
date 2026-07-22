@@ -31,37 +31,11 @@ class PeriodController extends Controller
 
         // Compute live preview for open periods
         $previews = [];
+        $periodService = app(PeriodService::class);
+        
         foreach ($periods as $period) {
             if ($period->state === 'open') {
-                $houseEarned = 0;
-                $partnerEarned = 0;
-                $periodEnd = Carbon::create($period->year, $period->month, 1)->endOfMonth();
-
-                $clients = Client::with('activeServices')->get();
-                foreach ($clients as $client) {
-                    if ($client->status === 'active' && $client->activeServices->isNotEmpty()) {
-                        $breakdown = $pricingService->computeForClient($client);
-                        if ($breakdown['monthly']['list'] > 0) {
-                            $houseEarned += $breakdown['monthly']['house'];
-                            $partnerEarned += $breakdown['monthly']['partner'];
-                        }
-
-                        if ($client->started_at && $client->started_at->lte($periodEnd)) {
-                            $setupExists = EarningLine::where('client_id', $client->id)
-                                ->where('kind', 'setup')
-                                ->exists();
-                            
-                            if (!$setupExists && $breakdown['setup']['list'] >= 0) {
-                                $houseEarned += $breakdown['setup']['house'];
-                                $partnerEarned += $breakdown['setup']['partner'];
-                            }
-                        }
-                    }
-                }
-                $previews[$period->id] = [
-                    'house_earned' => $houseEarned,
-                    'partner_earned' => $partnerEarned,
-                ];
+                $previews[$period->id] = $periodService->previewPeriod($period);
             } else {
                 $previews[$period->id] = [
                     'house_earned' => EarningLine::where('period_id', $period->id)->sum('house_fils'),

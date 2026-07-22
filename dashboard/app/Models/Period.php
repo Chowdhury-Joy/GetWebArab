@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Period extends Model
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'year',
+        'month',
+        'state',
+        'closed_at',
+        'closed_by',
+    ];
 
     protected $casts = [
         'closed_at' => 'datetime',

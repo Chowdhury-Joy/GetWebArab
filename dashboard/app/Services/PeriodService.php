@@ -18,14 +18,51 @@ class PeriodService
         $this->pricingService = $pricingService;
     }
 
-    public function closePeriod(Period $period): void
+    public function previewPeriod(Period $period): array
     {
-        if ($period->state !== 'open') {
-            throw new Exception("Cannot close a period that is already closed.");
+        $houseEarned = 0;
+        $partnerEarned = 0;
+        $periodEnd = Carbon::create($period->year, $period->month, 1)->endOfMonth();
+
+        $clients = Client::with('activeServices')->get();
+        foreach ($clients as $client) {
+            if ($client->status === 'active' && $client->activeServices->isNotEmpty()) {
+                $breakdown = $this->pricingService->computeForClient($client);
+                
+                if ($breakdown['monthly']['list'] > 0) {
+                    $houseEarned += $breakdown['monthly']['house'];
+                    $partnerEarned += $breakdown['monthly']['partner'];
+                }
+
+                if ($client->started_at && $client->started_at->lte($periodEnd)) {
+                    $setupExists = EarningLine::where('client_id', $client->id)
+                        ->where('kind', 'setup')
+                        ->exists();
+
+                    if (!$setupExists && $breakdown['setup']['list'] >= 0) {
+                        $houseEarned += $breakdown['setup']['house'];
+                        $partnerEarned += $breakdown['setup']['partner'];
+                    }
+                }
+            }
         }
 
+        return [
+            'house_earned' => $houseEarned,
+            'partner_earned' => $partnerEarned,
+        ];
+    }
+
+    public function closePeriod(Period $period): void
+    {
         DB::transaction(function () use ($period) {
-            $periodEnd = Carbon::create($period->year, $period->month, 1)->endOfMonth();
+            $lockedPeriod = Period::where('id', $period->id)->lockForUpdate()->first();
+            
+            if ($lockedPeriod->state !== 'open') {
+                throw new Exception("Cannot close a period that is already closed.");
+            }
+
+            $periodEnd = Carbon::create($lockedPeriod->year, $lockedPeriod->month, 1)->endOfMonth();
 
             // Find all clients that could have activity this month
             // We'll iterate and check conditions inside
@@ -43,7 +80,7 @@ class PeriodService
                     // Only if they actually have monthly charges (list > 0) to avoid zero-rows
                     if ($breakdown['monthly']['list'] > 0) {
                         EarningLine::create([
-                            'period_id' => $period->id,
+                            'period_id' => $lockedPeriod->id,
                             'partner_id' => $client->partner_id,
                             'client_id' => $client->id,
                             'kind' => 'monthly',
@@ -64,7 +101,7 @@ class PeriodService
 
                         if (!$setupExists && $breakdown['setup']['list'] >= 0) {
                             EarningLine::create([
-                                'period_id' => $period->id,
+                                'period_id' => $lockedPeriod->id,
                                 'partner_id' => $client->partner_id,
                                 'client_id' => $client->id,
                                 'kind' => 'setup',
@@ -79,7 +116,7 @@ class PeriodService
                 }
             }
 
-            $period->update([
+            $lockedPeriod->update([
                 'state' => 'closed',
                 'closed_at' => now(),
                 'closed_by' => auth()->id(), // null in console/tests without auth

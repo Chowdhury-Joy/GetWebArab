@@ -63,8 +63,7 @@ class DashboardController extends Controller
             if ($client->status === 'active') {
                 $currentMonthlyRunRate += $split['monthly']['partner'];
             }
-            // For v2, lifetime setup earned might be slightly inaccurate if derived from current pricing instead of earning_lines,
-            // but we'll leave it as is, or we can compute it from earning_lines.
+            $lifetimeSetupEarned += $split['setup']['partner'];
         }
         
         $closedPeriods = \App\Models\Period::where('state', 'closed')->orderBy('year', 'desc')->orderBy('month', 'desc')->get();
