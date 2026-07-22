@@ -1,30 +1,31 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">Add Partner</h2>
+        <div class="flex items-center">
+            <a href="{{ route('admin.partners.index') }}" class="mr-4 text-gray-400 hover:text-indigo-600 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            </a>
+            <h2 class="font-semibold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-purple-600 leading-tight">Add Partner</h2>
+        </div>
     </x-slot>
     <div class="py-12">
         <div class="max-w-3xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
-                <form action="{{ route('admin.partners.store') }}" method="POST" class="space-y-4">
+            <div class="glass-card p-8">
+                <form action="{{ route('admin.partners.store') }}" method="POST" class="space-y-6">
                     @csrf
                     <div>
-                        <label class="block font-medium text-sm text-gray-700">Name</label>
-                        <input type="text" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                        <label class="block font-medium text-sm text-gray-700 mb-1">Name</label>
+                        <input type="text" name="name" class="input-modern" required>
                     </div>
                     <div>
-                        <label class="block font-medium text-sm text-gray-700">Email</label>
-                        <input type="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                        <label class="block font-medium text-sm text-gray-700 mb-1">Email</label>
+                        <input type="email" name="email" class="input-modern" required>
                     </div>
                     <div>
-                        <label class="block font-medium text-sm text-gray-700">Phone</label>
-                        <input type="text" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <label class="block font-medium text-sm text-gray-700 mb-1">Temporary Password</label>
+                        <input type="password" name="password" class="input-modern" required>
                     </div>
-                    <div>
-                        <label class="block font-medium text-sm text-gray-700">Password</label>
-                        <input type="password" name="password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
-                    </div>
-                    <div class="pt-4 border-t">
-                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Create Partner</button>
+                    <div class="flex justify-end pt-4 border-t border-gray-100">
+                        <button type="submit" class="btn-primary">Create Partner</button>
                     </div>
                 </form>
             </div>
