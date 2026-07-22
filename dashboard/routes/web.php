@@ -25,6 +25,13 @@ Route::middleware('auth')->group(function () {
         Route::resource('services', ServiceController::class)->only(['index', 'update']);
         Route::get('settings', [SettingsController::class, 'edit'])->name('settings.edit');
         Route::patch('settings', [SettingsController::class, 'update'])->name('settings.update');
+
+        // V2 Payout Tracking
+        Route::get('periods', [\App\Http\Controllers\Admin\PeriodController::class, 'index'])->name('periods.index');
+        Route::post('periods/{period}/close', [\App\Http\Controllers\Admin\PeriodController::class, 'close'])->name('periods.close');
+        
+        Route::get('periods/{period}/payouts', [\App\Http\Controllers\Admin\PayoutController::class, 'index'])->name('payouts.index');
+        Route::post('periods/{period}/payouts/{partner}', [\App\Http\Controllers\Admin\PayoutController::class, 'store'])->name('payouts.store');
     });
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -46,4 +46,24 @@ class User extends Authenticatable
     {
         return $this->hasMany(Client::class, 'partner_id');
     }
+
+    public function earningLines(): HasMany
+    {
+        return $this->hasMany(EarningLine::class, 'partner_id');
+    }
+
+    public function payouts(): HasMany
+    {
+        return $this->hasMany(Payout::class, 'partner_id');
+    }
+
+    public function earnedForPeriod(Period $period): int
+    {
+        return $this->earningLines()->where('period_id', $period->id)->sum('partner_fils');
+    }
+
+    public function wasPaidForPeriod(Period $period): bool
+    {
+        return $this->payouts()->where('period_id', $period->id)->exists();
+    }
 }

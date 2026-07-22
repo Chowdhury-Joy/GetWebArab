@@ -37,4 +37,9 @@ class Client extends Model
     {
         return $this->services()->wherePivot('is_active', true);
     }
+
+    public function earningLines()
+    {
+        return $this->hasMany(EarningLine::class);
+    }
 }

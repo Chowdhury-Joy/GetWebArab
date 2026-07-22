@@ -4,6 +4,34 @@
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="glass-card flex justify-between items-center bg-indigo-50 border-indigo-100">
+                    <div>
+                        <div class="text-indigo-800 text-sm font-semibold uppercase tracking-wider mb-1">Current Open Month ({{ $openPeriod ? DateTime::createFromFormat('!m', $openPeriod->month)->format('F') : 'None' }})</div>
+                        <div class="text-gray-500 text-sm">Live Estimate House Revenue</div>
+                        <div class="text-3xl font-bold text-indigo-900 mt-2">{{ number_format($totalHouseMonthly / 100, 2) }} <span class="text-lg text-indigo-700 font-medium">AED</span></div>
+                    </div>
+                    <div>
+                        <a href="{{ route('admin.periods.index') }}" class="btn-primary text-sm">Manage Periods &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="glass-card flex justify-between items-center {{ $unpaidPartnersCount > 0 ? 'bg-amber-50 border-amber-200' : 'bg-emerald-50 border-emerald-100' }}">
+                    <div>
+                        <div class="text-gray-800 text-sm font-semibold uppercase tracking-wider mb-1">To-Do: Payouts</div>
+                        <div class="text-gray-500 text-sm">For last closed month ({{ $lastClosedPeriod ? DateTime::createFromFormat('!m', $lastClosedPeriod->month)->format('F') : 'None' }})</div>
+                        <div class="text-3xl font-bold {{ $unpaidPartnersCount > 0 ? 'text-amber-700' : 'text-emerald-700' }} mt-2">
+                            {{ $unpaidPartnersCount }} <span class="text-lg font-medium">partners unpaid</span>
+                        </div>
+                    </div>
+                    @if($lastClosedPeriod)
+                        <div>
+                            <a href="{{ route('admin.payouts.index', $lastClosedPeriod) }}" class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-lg font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 transition">Pay Now &rarr;</a>
+                        </div>
+                    @endif
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div class="metric-card">
                     <div class="text-indigo-500 text-sm font-semibold uppercase tracking-wider mb-1">Total Partners</div>
