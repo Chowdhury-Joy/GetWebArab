@@ -1,9 +1,11 @@
 <x-filament-panels::page>
-    <x-filament-panels::form wire:submit="save">
+    <form wire:submit="save" class="space-y-6">
         {{ $this->form }}
 
-        <x-filament::button type="submit" size="lg">
-            Save Changes
-        </x-filament::button>
-    </x-filament-panels::form>
+        <div>
+            <x-filament::button type="submit" size="lg">
+                Save Changes
+            </x-filament::button>
+        </div>
+    </form>
 </x-filament-panels::page>
