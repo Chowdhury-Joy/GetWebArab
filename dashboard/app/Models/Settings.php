@@ -11,7 +11,7 @@ class Settings extends Model
 {
     public static function current(): self
     {
-        return Cache::rememberForever('settings.current', function () {
+        $attributes = Cache::rememberForever('settings.current', function () {
             return self::firstOrCreate(
                 ['id' => 1],
                 [
@@ -20,8 +20,10 @@ class Settings extends Model
                     'founder_discount_pct' => 25.00,
                     'founder_client_cap' => 5,
                 ]
-            );
+            )->getAttributes();
         });
+
+        return (new static)->forceFill($attributes)->syncOriginal();
     }
 
     protected static function booted()
