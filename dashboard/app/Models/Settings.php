@@ -23,7 +23,10 @@ class Settings extends Model
             )->getAttributes();
         });
 
-        return (new static)->forceFill($attributes)->syncOriginal();
+        $instance = (new static)->forceFill($attributes)->syncOriginal();
+        $instance->exists = true;
+
+        return $instance;
     }
 
     protected static function booted()

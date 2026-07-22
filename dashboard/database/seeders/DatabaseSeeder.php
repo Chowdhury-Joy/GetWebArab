@@ -12,6 +12,8 @@ class DatabaseSeeder extends Seeder
             SettingsSeeder::class,
             ServiceSeeder::class,
             AdminSeeder::class,
+            LandingContentSeeder::class,
+            BlogPostSeeder::class,
         ]);
 
         if (app()->environment('local')) {

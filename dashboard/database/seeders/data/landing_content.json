@@ -1,0 +1,688 @@
+[
+  {
+    "key": "tagline",
+    "section": "header",
+    "sort_order": 0,
+    "en": "Digital Growth Agency",
+    "ar": "وكالة نمو رقمي وتطوير مواقف"
+  },
+  {
+    "key": "nav_stack",
+    "section": "header",
+    "sort_order": 1,
+    "en": "Pricing & Calculator",
+    "ar": "الأسعار والحاسبة"
+  },
+  {
+    "key": "nav_pillars",
+    "section": "header",
+    "sort_order": 2,
+    "en": "How We Grow Your Biz",
+    "ar": "كيف ننمي عملك"
+  },
+  {
+    "key": "nav_team",
+    "section": "header",
+    "sort_order": 3,
+    "en": "Our Team",
+    "ar": "فريقنا"
+  },
+  {
+    "key": "nav_faq",
+    "section": "header",
+    "sort_order": 4,
+    "en": "FAQ",
+    "ar": "الأسئلة الشائعة"
+  },
+  {
+    "key": "nav_blog",
+    "section": "header",
+    "sort_order": 5,
+    "en": "Blog",
+    "ar": "المدونة"
+  },
+  {
+    "key": "btn_view_pricing",
+    "section": "header",
+    "sort_order": 6,
+    "en": "See What You'll Pay",
+    "ar": "عرض السعر المتوقع"
+  },
+  {
+    "key": "hero_eyebrow",
+    "section": "hero",
+    "sort_order": 7,
+    "en": "MORE LOCAL LEADS. ZERO TECH HEADACHES. ONE FIXED AED PRICE.",
+    "ar": "مزيد من العملاء المحليين. بدون عناء تقني. سعر ثابت بالدرهم الإماراتي."
+  },
+  {
+    "key": "hero_title",
+    "section": "hero",
+    "sort_order": 8,
+    "en": "Turn your website into a 24/7 customer magnet in the UAE.",
+    "ar": "حول موقعك الإلكتروني إلى مغناطيس عملاء يعمل 24/7 في الإمارات."
+  },
+  {
+    "key": "hero_subtitle",
+    "section": "hero",
+    "sort_order": 9,
+    "en": "We build bilingual websites that turn local searchers into paying customers — then keep them coming with SEO and ads, all for one clear monthly price. No retainers, no surprise invoices, no chasing four different vendors.",
+    "ar": "نبني مواقع ثنائية اللغة تحول الباحثين المحليين إلى عملاء يدفعون — ثم نحافظ على تدفقهم عبر تحسين محركات البحث والإعلانات، كل ذلك بسعر شهري واحد واضح. بدون عقود ملزمة، وبدون فواتير مفاجئة، وبدون تشتت بين موردين متعددين."
+  },
+  {
+    "key": "hero_cta_1",
+    "section": "hero",
+    "sort_order": 10,
+    "en": "Build My Package →",
+    "ar": "ابنِ باقة النمو الخاصة بك ←"
+  },
+  {
+    "key": "hero_note",
+    "section": "hero",
+    "sort_order": 11,
+    "en": "Built for UAE local businesses · Takes about 60 seconds",
+    "ar": "مصممة للشركات المحلية في الإمارات · تستغرق حوالي 60 ثانية"
+  },
+  {
+    "key": "trust_eyebrow",
+    "section": "trust_bar",
+    "sort_order": 12,
+    "en": "YOUR BUSINESS GROWTH PARTNER",
+    "ar": "شريك نمو أعمالك في الإمارات"
+  },
+  {
+    "key": "trust_headline",
+    "section": "trust_bar",
+    "sort_order": 13,
+    "en": "Built on Measurable Return & Absolute Reliability",
+    "ar": "عائد ملموس وموثوقية تشغيلية مطلقة"
+  },
+  {
+    "key": "t_p1",
+    "section": "trust_bar",
+    "sort_order": 14,
+    "en": "Zero Surprise Fees or Hidden AED Costs",
+    "ar": "بدون رسوم مفاجئة أو تكاليف غير معلنة بالدرهم"
+  },
+  {
+    "key": "t_p2",
+    "section": "trust_bar",
+    "sort_order": 15,
+    "en": "Direct 1-on-1 Business Owner Accountability",
+    "ar": "مسؤولية مباشرة وتواصل 1-إلى-1 مع أصحاب العمل"
+  },
+  {
+    "key": "t_p3",
+    "section": "trust_bar",
+    "sort_order": 16,
+    "en": "Measurable Local UAE Leads & Inquiries",
+    "ar": "عملاء محليون واستفسارات حقيقية ملموسة"
+  },
+  {
+    "key": "prob_eyebrow",
+    "section": "problem",
+    "sort_order": 17,
+    "en": "WHY UAE BUSINESS OWNERS SWITCH TO US",
+    "ar": "لماذا يختارنا أصحاب الشركات في الإمارات"
+  },
+  {
+    "key": "prob_title",
+    "section": "problem",
+    "sort_order": 18,
+    "en": "Stop wasting money on websites that don't generate revenue",
+    "ar": "توقف عن إهدار المال على مواقع لا تحقق أرباحاً"
+  },
+  {
+    "key": "prob_desc",
+    "section": "problem",
+    "sort_order": 19,
+    "en": "You didn't start your business to babysit a website — or to chase a designer, a host, and an ads guy who never talk to each other. That's where most UAE owners lose money and hours, with no clear line back to a single new customer. We flip it: one team, one price, one job — turning your site into a steady source of local leads while you get back to running the business.",
+    "ar": "أنت لم تبدأ عملك لتنشغل بصيانة موقع أو ملاحقة مصمم ومطور ومسؤول إعلانات لا يتحدثون مع بعضهم. هنا يخسر معظم أصحاب الشركات في الإمارات أموالهم وساعاتهم دون عائد واضح. نحن نغير ذلك: فريق واحد، سعر واحد، مهمة واحدة — تحويل موقعك إلى مصدر منتظم للعملاء المحليين لتركز أنت على إدارة عملك."
+  },
+  {
+    "key": "f1_title",
+    "section": "problem",
+    "sort_order": 20,
+    "en": "The Traditional Agency",
+    "ar": "الوكالات التقليدية"
+  },
+  {
+    "key": "f1_desc",
+    "section": "problem",
+    "sort_order": 21,
+    "en": "5,000+ AED upfront just for the site, a 12-month lock-in, and no promise your revenue actually moves.",
+    "ar": "أكثر من 5,000 درهم مقدمًا للموقع فقط، عقد ملزم لـ 12 شهرًا، ودون أي ضمان حقيقي لزيادة مبيعاتك."
+  },
+  {
+    "key": "f2_title",
+    "section": "problem",
+    "sort_order": 22,
+    "en": "The Solo Freelancer",
+    "ar": "المستقلون الفرديون"
+  },
+  {
+    "key": "f2_desc",
+    "section": "problem",
+    "sort_order": 23,
+    "en": "Cheap to start, but gone the moment your site breaks or the leads dry up.",
+    "ar": "رخيص في البداية، لكنه يختفي تمامًا بمجرد تعطل موقعك أو توقف تدفق الطلبات."
+  },
+  {
+    "key": "f3_title",
+    "section": "problem",
+    "sort_order": 24,
+    "en": "Get Web Arab",
+    "ar": "Get Web Arab"
+  },
+  {
+    "key": "f3_desc",
+    "section": "problem",
+    "sort_order": 25,
+    "en": "800 AED to start, one team accountable for uptime and growth, and results you can count in the inquiries you receive.",
+    "ar": "800 درهم فقط للبدء، وفريق واحد مسؤول عن استقرار ونمو موقعك، ونتائج ملموسة تراها في استفسارات عملائك."
+  },
+  {
+    "key": "pil_eyebrow",
+    "section": "pillars",
+    "sort_order": 26,
+    "en": "WHAT YOU GET",
+    "ar": "ما تحصل عليه"
+  },
+  {
+    "key": "pil_title",
+    "section": "pillars",
+    "sort_order": 27,
+    "en": "Everything Your Business Needs Online",
+    "ar": "كل ما يحتاجه عملك عبر الإنترنت"
+  },
+  {
+    "key": "pil_sub",
+    "section": "pillars",
+    "sort_order": 28,
+    "en": "Start with the website. Add the growth pieces whenever you're ready — each one is a fixed monthly service, no surprises.",
+    "ar": "ابدأ بالموقع الإلكتروني أولاً. ثم أضف خدمات النمو متى كنت مستعدًا — كل خدمة بسعر شهري ثابت ودون مفاجآت."
+  },
+  {
+    "key": "p1_title",
+    "section": "pillars",
+    "sort_order": 29,
+    "en": "A website that works",
+    "ar": "موقع إلكتروني ذو فاعلية حقيقية"
+  },
+  {
+    "key": "p1_desc",
+    "section": "pillars",
+    "sort_order": 30,
+    "en": "Fast, mobile-first, and built to turn visitors into calls and bookings — not just look pretty. We host it and keep it running.",
+    "ar": "موقع سريع، متوافق مع الجوال، ومصمم خصيصًا لتحويل الزوار إلى اتصالات وحجوزات حقيقية، وليس لمجرد المظهر. نحن نستضيفه ونحافظ على عمله."
+  },
+  {
+    "key": "p2_title",
+    "section": "pillars",
+    "sort_order": 31,
+    "en": "SEO",
+    "ar": "تحسين محركات البحث SEO"
+  },
+  {
+    "key": "p2_desc",
+    "section": "pillars",
+    "sort_order": 32,
+    "en": "Show up when people in your area search for what you sell. Ongoing work to climb Google, not a one-time fix.",
+    "ar": "اظهر لعملائك المحليين عندما يبحثون عما تقدمه. عمل مستمر وتطوير لتصدر نتائج بحث جوجل، وليس تعديلاً لمرة واحدة."
+  },
+  {
+    "key": "p3_title",
+    "section": "pillars",
+    "sort_order": 33,
+    "en": "Ads",
+    "ar": "الإعلانات المُموّلة"
+  },
+  {
+    "key": "p3_desc",
+    "section": "pillars",
+    "sort_order": 34,
+    "en": "Google and Meta campaigns that put you in front of ready-to-buy customers. We manage them; your ad budget stays yours, billed separately.",
+    "ar": "حملات إعلانية ذكية على جوجل وميتا تضعك مباشرة أمام العملاء الجاهزين للشراء. نحن نديرها؛ وميزانية إعلاناتك تظل لك وتُدفع للمنصات مباشرة."
+  },
+  {
+    "key": "p4_title",
+    "section": "pillars",
+    "sort_order": 35,
+    "en": "Email",
+    "ar": "التسويق بالبريد الإلكتروني"
+  },
+  {
+    "key": "p4_desc",
+    "section": "pillars",
+    "sort_order": 36,
+    "en": "Stay in front of past customers with offers and updates that bring them back — set up and sent for you every month.",
+    "ar": "ابقَ دائمًا في أذهان عملائك السابقين بعروض وتحديثات شهرية تدفعهم للعودة — نقوم بإعدادها وإرسالها نيابة عنك."
+  },
+  {
+    "key": "stack_eyebrow",
+    "section": "pricing_calculator",
+    "sort_order": 37,
+    "en": "ONE CLEAR PRICE. NOTHING HIDDEN.",
+    "ar": "سعر واحد واضح. لا شيء خفي."
+  },
+  {
+    "key": "stack_title",
+    "section": "pricing_calculator",
+    "sort_order": 38,
+    "en": "Build your growth engine — and see the exact AED before you commit",
+    "ar": "ابنِ محرك النمو الخاص بك — وشاهد التكلفة الدقيقة بالدرهم قبل البدء"
+  },
+  {
+    "key": "stack_desc",
+    "section": "pricing_calculator",
+    "sort_order": 39,
+    "en": "Pick only what you need. The total updates as you go, so there are no surprises and nothing to negotiate later.",
+    "ar": "اختر فقط ما يحتاجه عملك. تتحدث التكلفة الإجمالية مباشرة أثناء اختيارك، دون مفاجآت أو مفاوضات لاحقة."
+  },
+  {
+    "key": "st1_title",
+    "section": "pricing_calculator",
+    "sort_order": 40,
+    "en": "Website Setup & Build",
+    "ar": "تأسيس وبناء الموقع"
+  },
+  {
+    "key": "st1_desc",
+    "section": "pricing_calculator",
+    "sort_order": 41,
+    "en": "A high-speed bilingual site engineered to turn UAE visitors into buyers.",
+    "ar": "موقع ثنائي اللغة فائق السرعة ومصمم لتحويل زوار الإمارات إلى مشترين."
+  },
+  {
+    "key": "st2_title",
+    "section": "pricing_calculator",
+    "sort_order": 42,
+    "en": "24/7 Care & Hosting",
+    "ar": "صيانة واستضافة 24/7"
+  },
+  {
+    "key": "st2_desc",
+    "section": "pricing_calculator",
+    "sort_order": 43,
+    "en": "Hosting, security, daily backups, guaranteed uptime, and ongoing edits — so your site never costs you a sale.",
+    "ar": "استضافة سحابية سريعة، حماية، نسخ احتياطي يومي، وضمان استقرار كامل مع تحديثات مستمرة."
+  },
+  {
+    "key": "bundle_rule_tag",
+    "section": "pricing_calculator",
+    "sort_order": 44,
+    "en": "⚡ Add 2 and save 10% · Add all 3 and save 20%",
+    "ar": "⚡ أضف خدمتين واحصل على خصم 10% · أضف 3 خدمات بخصم 20%"
+  },
+  {
+    "key": "c_seo_t",
+    "section": "pricing_calculator",
+    "sort_order": 45,
+    "en": "Local SEO",
+    "ar": "SEO محلي"
+  },
+  {
+    "key": "c_seo_d",
+    "section": "pricing_calculator",
+    "sort_order": 46,
+    "en": "Rank #1 on Google Maps and pull in local buyers searching right now",
+    "ar": "تصدر نتائج خرائط جوجل وجذب العملاء المحليين الذين يبحثون الآن"
+  },
+  {
+    "key": "c_ads_t",
+    "section": "pricing_calculator",
+    "sort_order": 47,
+    "en": "Google & Meta Ads",
+    "ar": "إعلانات جوجل وميتا"
+  },
+  {
+    "key": "c_ads_d",
+    "section": "pricing_calculator",
+    "sort_order": 48,
+    "en": "High-ROI campaigns; ad spend billed straight to your card",
+    "ar": "إدارة حملات إعلانية عالية العائد (ميزانية الإعلانات تدفعها مباشرة للمنصات)"
+  },
+  {
+    "key": "c_email_t",
+    "section": "pricing_calculator",
+    "sort_order": 49,
+    "en": "Lead Nurturing",
+    "ar": "استبقاء ومتابعة العملاء"
+  },
+  {
+    "key": "c_email_d",
+    "section": "pricing_calculator",
+    "sort_order": 50,
+    "en": "Turn cold inquiries into repeat, paying customers automatically",
+    "ar": "تحويل الطلبات الباردة إلى عملاء دائمين تلقائيًا وبسهولة"
+  },
+  {
+    "key": "calc_final_price_title",
+    "section": "pricing_calculator",
+    "sort_order": 51,
+    "en": "YOUR GUARANTEED AED PRICE",
+    "ar": "سعرك النهائي المضمون بالدرهم"
+  },
+  {
+    "key": "calc_one_time",
+    "section": "pricing_calculator",
+    "sort_order": 52,
+    "en": "One-time:",
+    "ar": "مرة واحدة:"
+  },
+  {
+    "key": "calc_monthly",
+    "section": "pricing_calculator",
+    "sort_order": 53,
+    "en": "Monthly care & growth:",
+    "ar": "الصيانة والنمو الشهري:"
+  },
+  {
+    "key": "btn_confirm_plan",
+    "section": "pricing_calculator",
+    "sort_order": 54,
+    "en": "Lock In This Price",
+    "ar": "تأكيد وتأمين هذا السعر"
+  },
+  {
+    "key": "team_eyebrow",
+    "section": "team",
+    "sort_order": 55,
+    "en": "THE PEOPLE BEHIND YOUR RESULTS",
+    "ar": "الخبراء المسؤولون عن نمو عملك"
+  },
+  {
+    "key": "team_title",
+    "section": "team",
+    "sort_order": 56,
+    "en": "A full growth team, without agency overhead",
+    "ar": "فريق نمو متكامل، بدون تكاليف الوكالات الإضافية"
+  },
+  {
+    "key": "team_subtitle",
+    "section": "team",
+    "sort_order": 57,
+    "en": "You get a designer, engineers, and marketers focused on one thing — your leads — for a fraction of what an in-house team costs.",
+    "ar": "تحصل على مصمم، مطورين، ومسوقين يركزون على شيء واحد — جذب عملاء لشركتك — بجزء بسيط من تكلفة فريق داخلي."
+  },
+  {
+    "key": "m1_name",
+    "section": "team",
+    "sort_order": 58,
+    "en": "Joy Chowdhury",
+    "ar": "جوي شودهوري"
+  },
+  {
+    "key": "m1_role",
+    "section": "team",
+    "sort_order": 59,
+    "en": "Founder & Head of Product",
+    "ar": "المؤسس ورئيس تطوير المنتجات"
+  },
+  {
+    "key": "m1_bio",
+    "section": "team",
+    "sort_order": 60,
+    "en": "Owns your strategy and build, and stays accountable to you directly.",
+    "ar": "يقود استراتيجية البناء والتطوير، ويظل مسؤولاً أمامك مباشرة وبشكل شخصي."
+  },
+  {
+    "key": "m2_name",
+    "section": "team",
+    "sort_order": 61,
+    "en": "Tariq Al-Mansoor",
+    "ar": "طارق المنصور"
+  },
+  {
+    "key": "m2_role",
+    "section": "team",
+    "sort_order": 62,
+    "en": "UAE Growth & Client Partner",
+    "ar": "شريك النمو وعلاقات العملاء للإمارات"
+  },
+  {
+    "key": "m2_bio",
+    "section": "team",
+    "sort_order": 63,
+    "en": "Your local point of contact for onboarding and growth.",
+    "ar": "نقطة تواصلك المحلية المباشرة للتأسيس والتطوير المستمر."
+  },
+  {
+    "key": "m3_name",
+    "section": "team",
+    "sort_order": 64,
+    "en": "Arifur Rahman",
+    "ar": "عارف الرحمن"
+  },
+  {
+    "key": "m3_role",
+    "section": "team",
+    "sort_order": 65,
+    "en": "Lead UI/UX Designer",
+    "ar": "كبير مصممي واجهات وتجربة المستخدم UI/UX"
+  },
+  {
+    "key": "m3_bio",
+    "section": "team",
+    "sort_order": 66,
+    "en": "Designs bilingual pages built to convert, not just to look good.",
+    "ar": "يبتكر تصميمات جذابة وعالية التحويل مع دعم كامل لثنائية اللغة."
+  },
+  {
+    "key": "m4_name",
+    "section": "team",
+    "sort_order": 67,
+    "en": "Nusrat Jahan",
+    "ar": "نصرت جهان"
+  },
+  {
+    "key": "m4_role",
+    "section": "team",
+    "sort_order": 68,
+    "en": "Senior Full-Stack Engineer",
+    "ar": "كبير مهندسي البرمجيات Full-Stack"
+  },
+  {
+    "key": "m4_bio",
+    "section": "team",
+    "sort_order": 69,
+    "en": "Keeps your site fast, secure, and always online.",
+    "ar": "تحافظ على سرعة موقعك الإلكتروني، أمانه واستقراره الدائم عبر الإنترنت."
+  },
+  {
+    "key": "m5_name",
+    "section": "team",
+    "sort_order": 70,
+    "en": "Mahmudul Hasan",
+    "ar": "محمود الحسن"
+  },
+  {
+    "key": "m5_role",
+    "section": "team",
+    "sort_order": 71,
+    "en": "Performance Marketing & Ads Lead",
+    "ar": "مدير التسويق الرقمي والإعلانات"
+  },
+  {
+    "key": "m5_bio",
+    "section": "team",
+    "sort_order": 72,
+    "en": "Runs ad campaigns tuned for UAE buyers and real ROI.",
+    "ar": "يدير حملات إعلانية عالية العائد وتستهدف الجمهور المحلي بدقة لتحقيق نتائج حقيقية."
+  },
+  {
+    "key": "m6_name",
+    "section": "team",
+    "sort_order": 73,
+    "en": "Farhana Akter",
+    "ar": "فرحانة أكتر"
+  },
+  {
+    "key": "m6_role",
+    "section": "team",
+    "sort_order": 74,
+    "en": "Technical SEO & Growth Strategist",
+    "ar": "أخصائية SEO وتطوير محركات البحث"
+  },
+  {
+    "key": "m6_bio",
+    "section": "team",
+    "sort_order": 75,
+    "en": "Gets you ranking on Google Maps and local search.",
+    "ar": "تقود تصدر نتائج خرائط جوجل وجذب العملاء المحليين الباحثين عن خدماتك."
+  },
+  {
+    "key": "faq_eyebrow",
+    "section": "faq",
+    "sort_order": 76,
+    "en": "REASSURANCE & CLARITY",
+    "ar": "شفافية ووضوح كامل"
+  },
+  {
+    "key": "faq_title",
+    "section": "faq",
+    "sort_order": 77,
+    "en": "Frequently Asked Questions",
+    "ar": "الأسئلة الشائعة"
+  },
+  {
+    "key": "faq1_q",
+    "section": "faq",
+    "sort_order": 78,
+    "en": "Do I own my website and code 100%?",
+    "ar": "هل أملك الموقع والأكواد البرمجية 100%؟"
+  },
+  {
+    "key": "faq1_a",
+    "section": "faq",
+    "sort_order": 79,
+    "en": "Completely — the site, the code, and every ad and email account are in your name from day one. You're never held hostage by a vendor: your digital asset keeps working for you whether you stay with us or not.",
+    "ar": "بالتأكيد — الموقع، الكود، وحسابات الإعلانات والبريد الإلكتروني مسجلة باسمك بالكامل من اليوم الأول. لن تكون رهينة لأي مورد: أصولك الرقمية تظل ملكك سواء استمررت معنا أو قررت المغادرة."
+  },
+  {
+    "key": "faq2_q",
+    "section": "faq",
+    "sort_order": 80,
+    "en": "Are there long-term retainers or cancellation penalties?",
+    "ar": "هل هناك عقود طويلة الأمد أو غرامات إلغاء؟"
+  },
+  {
+    "key": "faq2_a",
+    "section": "faq",
+    "sort_order": 81,
+    "en": "None. Everything runs month to month, so we have to earn your business every month instead of trapping you in a 12-month contract. You stay because the leads keep coming — not because a penalty clause makes you.",
+    "ar": "لا توجد أي عقود طويلة الأمد. جميع خدماتنا تعمل بنظام شهر بشهر، مما يعني أننا مطالبون بإثبات كفاءتنا لك كل شهر بدلاً من تقييدك بعقد لمدة عام. استمرارك معنا نابع من النتائج والعملاء الجدد."
+  },
+  {
+    "key": "faq3_q",
+    "section": "faq",
+    "sort_order": 82,
+    "en": "How is Google & Meta ad spend managed?",
+    "ar": "كيف تتم إدارة ميزانية الإعلانات المُموّلة؟"
+  },
+  {
+    "key": "faq3_a",
+    "section": "faq",
+    "sort_order": 83,
+    "en": "Your budget is billed straight to your own card — we never mark it up or route it through us. You see exactly what's spent and what it returns, and every dirham goes to reaching customers, not hidden agency fees.",
+    "ar": "تُدفع ميزانية إعلاناتك مباشرة لحسابك في جوجل أو ميتا عبر بطاقتك الائتمانية. نحن لا نأخذ أي هوامش ربح منها، ودرهمك يذهب بالكامل للوصول لعملاء جدد دون رسوم خفية."
+  },
+  {
+    "key": "faq4_q",
+    "section": "faq",
+    "sort_order": 84,
+    "en": "How fast is the website live?",
+    "ar": "ما هي المدة المطلوبة لإطلاق الموقع الإلكتروني؟"
+  },
+  {
+    "key": "faq4_a",
+    "section": "faq",
+    "sort_order": 85,
+    "en": "In 3–5 days — not the months agencies usually take. The sooner it launches, the sooner it starts capturing local searchers, so you're getting inquiries while competitors are still reviewing a proposal.",
+    "ar": "خلال 3 إلى 5 أيام فقط — وليس الشهور التي تستغرقها الوكالات التقليدية. فكلما أسرعنا بالإطلاق، بدأ موقعك بجذب العملاء وتحقيق الأرباح لشركتك بشكل أسرع."
+  },
+  {
+    "key": "footer_title",
+    "section": "footer",
+    "sort_order": 86,
+    "en": "Ready to generate predictable UAE leads?",
+    "ar": "هل أنت جاهز لتحقيق نمو حقيقي ومباشر لعملك؟"
+  },
+  {
+    "key": "footer_sub",
+    "section": "footer",
+    "sort_order": 87,
+    "en": "One message and we will take it from there — no obligation.",
+    "ar": "رسالة واحدة وسيتولى فريقنا كل شيء — دون أي التزامات مسبقة."
+  },
+  {
+    "key": "footer_btn",
+    "section": "footer",
+    "sort_order": 88,
+    "en": "Lock In Your AED Rate",
+    "ar": "تأكيد سعرك بالدرهم"
+  },
+  {
+    "key": "footer_copy",
+    "section": "footer",
+    "sort_order": 89,
+    "en": "© 2026 Get Web Arab. Digital Growth Engine for UAE Local Businesses.",
+    "ar": "© 2026 Get Web Arab. محرك النمو الرقمي للشركات في الإمارات."
+  },
+  {
+    "key": "modal_title",
+    "section": "booking_modal",
+    "sort_order": 90,
+    "en": "Confirm Your Package",
+    "ar": "تأكيد تفاصيل العرض"
+  },
+  {
+    "key": "modal_desc",
+    "section": "booking_modal",
+    "sort_order": 91,
+    "en": "Enter your details and we'll message you on WhatsApp to lock in this exact AED price — no obligation.",
+    "ar": "أدخل بياناتك أدناه لتأكيد باقتك وسعرك النهائي بالدرهم."
+  },
+  {
+    "key": "label_name",
+    "section": "booking_modal",
+    "sort_order": 92,
+    "en": "Your Full Name *",
+    "ar": "الاسم الكامل *"
+  },
+  {
+    "key": "label_biz",
+    "section": "booking_modal",
+    "sort_order": 93,
+    "en": "Business Name *",
+    "ar": "اسم الشركة *"
+  },
+  {
+    "key": "label_phone",
+    "section": "booking_modal",
+    "sort_order": 94,
+    "en": "Phone / WhatsApp *",
+    "ar": "رقم الهاتف / الواتساب *"
+  },
+  {
+    "key": "label_email",
+    "section": "booking_modal",
+    "sort_order": 95,
+    "en": "Email Address *",
+    "ar": "البريد الإلكتروني *"
+  },
+  {
+    "key": "label_plan",
+    "section": "booking_modal",
+    "sort_order": 96,
+    "en": "Your Package (Final Price)",
+    "ar": "الباقة المحددة (السعر النهائي)"
+  },
+  {
+    "key": "btn_modal_submit",
+    "section": "booking_modal",
+    "sort_order": 97,
+    "en": "Confirm & Connect on WhatsApp",
+    "ar": "تأكيد والتواصل عبر الواتساب"
+  }
+]
